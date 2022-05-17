@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import logo from "./logo.svg";
 
 function App() {
+  document.addEventListener("message", (msg) => {
+    console.log(msg);
+  });
   return (
     <div className="App">
       <header className="App-header">
