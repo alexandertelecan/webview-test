@@ -6,7 +6,6 @@ import logo from "./logo.svg";
 function App() {
   window.addEventListener("message", (message) => {
     console.log("MESSAGE RECEIVED!");
-    setAppData(message.data);
   });
   return (
     <div className="App">
