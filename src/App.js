@@ -1,11 +1,15 @@
 import "./App.css";
 
+import React, { useState } from "react";
+
 import logo from "./logo.svg";
 
 function App() {
+  const [appData, setAppData] = useState(false);
   window.addEventListener("message", (message) => {
-    alert(message.data);
+    setAppData(message);
   });
+  console.log(appData);
   return (
     <div className="App">
       <header className="App-header">
