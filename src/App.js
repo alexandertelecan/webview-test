@@ -4,7 +4,11 @@ import logo from "./logo.svg";
 
 function App() {
   document.addEventListener("message", (msg) => {
-    console.log(msg);
+    console.log("Received msg!", msg);
+  });
+
+  window.addEventListener("keydown", () => {
+    console.log("Key pressed!");
   });
   return (
     <div className="App">
