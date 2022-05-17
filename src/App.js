@@ -7,7 +7,7 @@ import logo from "./logo.svg";
 function App() {
   const [appData, setAppData] = useState(false);
   window.addEventListener("message", (message) => {
-    setAppData(message);
+    setAppData(message.data);
   });
   console.log(appData);
   return (
