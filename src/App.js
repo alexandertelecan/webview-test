@@ -1,11 +1,9 @@
 import "./App.css";
 
-import React, { useState } from "react";
-
+import React from "react";
 import logo from "./logo.svg";
 
 function App() {
-  const [appData, setAppData] = useState(false);
   window.addEventListener("message", (message) => {
     console.log("MESSAGE RECEIVED!");
     setAppData(message.data);
