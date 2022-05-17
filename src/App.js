@@ -7,9 +7,9 @@ import logo from "./logo.svg";
 function App() {
   const [appData, setAppData] = useState(false);
   window.addEventListener("message", (message) => {
+    console.log("MESSAGE RECEIVED!");
     setAppData(message.data);
   });
-  console.log(appData);
   return (
     <div className="App">
       <header className="App-header">
