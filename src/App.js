@@ -3,12 +3,8 @@ import "./App.css";
 import logo from "./logo.svg";
 
 function App() {
-  document.addEventListener("message", (msg) => {
-    console.log("Received msg!", msg);
-  });
-
-  window.addEventListener("keydown", () => {
-    console.log("Key pressed!");
+  window.addEventListener("message", (message) => {
+    alert(message.data);
   });
   return (
     <div className="App">
